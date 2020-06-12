@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BTC - VIGILA </title>
+    <link rel="icon" href="./icon/bitcoin.png">
+    <style>
+        html {
+            padding: 10px;
+            padding-top: 15px;
+            background: black;
+
+        }
+
+        nav {
+            width: 100%;
+            height: 15px;
+            margin-top: 1cm;
+            margin-bottom: 1cm;
+            color: whitesmoke;
+        }
+
+        .header2 {
+            margin-right: 1cm;
+            margin-top: 50px;
+            color: whitesmoke;
+        }
+
+        .uno {
+            color: whitesmoke;
+            text-decoration: none;
+            margin-left: 20px;
+            padding-top: 50px;
+        }
+
+        .dos {
+            color: whitesmoke;
+            text-decoration: none;
+            margin-left: 20px;
+            float: right
+        }
+
+        .header1 {
+            float: left;
+            color: black;
+            text-decoration: none;
+            margin-right: 2cm;
+            color: whitesmoke;
+        }
+
+        .logo {
+            width: 4cm;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        body {
+            font-family: 'Muli', sans-serif;
+        }
+
+        .texto {
+            margin-top: 200px;
+            margin-left: 2cm;
+        }
+
+        .gran-caja {
+            background-color: rgba(236, 236, 250, 0.973);
+            float: left;
+            width: 100%;
+            height: 300%;
+            margin-top: 1cm;
+            margin-bottom: 1cm;
+        }
+
+        .gran-caja img {
+            width: 100%;
+            height: 500px;
+
+
+        }
+
+
+        .caja1 {
+            width: 35%;
+            position: absolute;
+            float: left;
+        }
+
+        .caja1 h1 {
+
+            font-size: 35px;
+            padding: 1px 1px 1px 23px;
+            margin-left: 12px;
+        }
+
+
+        .caja2 {
+            float: right;
+            width: 50%;
+            height: 500px;
+
+        }
+
+        .boton button {
+            width: 200px;
+            height: 50px;
+            top: 580px;
+            position: absolute;
+            background-color: rgb(162, 166, 184);
+            float: left;
+            font-size: larger;
+            margin-left: 2cm;
+        }
+
+        #encabezado {
+            width: auto;
+            color: whitesmoke;
+        }
+
+        .uno:hover,
+        .dos:hover {
+            cursor: progress;
+            color: blueviolet;
+        }
+
+        @media (max-width:900px) {
+
+            .uno:hover,
+            .dos:hover {
+                cursor: progress;
+                color: blueviolet;
+            }
+
+            #encabezado {
+                width: auto;
+                display: block;
+                color: whitesmoke;
+            }
+
+            .header1 .uno {
+                display: table-footer-group;
+                width: 100%;
+                margin-top: 0;
+                color: whitesmoke;
+            }
+
+            .header2 .dos {
+
+                display: table-footer-group;
+                width: 100%;
+                margin-top: 0;
+                color: whitesmoke;
+            }
+
+
+            .caja1 h1 {
+                padding: 1px 1px 1px 23px;
+                font-size: 30px;
+                margin-left: 12px;
+            }
+
+            .texto {
+                margin-top: 267px;
+                margin-left: 14px;
+            }
+
+            .caja1 {
+                margin-top: 14px;
+                width: 40%;
+                position: absolute;
+                float: left;
+                margin-left: 7px;
+            }
+
+            footer p {
+                margin-top: 87px;
+            }
+        }
+
+
+        @media (max-width: 400px) {
+            .caja1 h1 {
+                padding: 1px 1px 1px 23px;
+                font-size: 20px;
+                margin-left: 12px;
+            }
+
+            .texto {
+                margin-top: 190px;
+                margin-left: 14px;
+                width: 34%;
+            }
+
+            .texto input {
+                width: 90px;
+                margin-left: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="encabezado">
+
+            <nav>
+                <div class="header1">
+                    <a class="uno" href="instructio.html"> Instrucciones de uso</a>
+                    <a target="_blank" class="uno" href="https://dolar.wilkinsonpc.com.co/divisas/dolar.html/">Precio
+                        del dolar hoy</a>
+                    <a target="_blank" class="uno" href="https://www.coingecko.com/es/monedas/bitcoin/">Precio del
+                        Bitcoin</a>
+
+                </div>
+                <div class="header2">
+                    <a class="dos" href="">¿Por qué comprar Bitcoin?</a>
+                    <a class="dos" href="">Alertas de descuentos</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="sec1">
+        <div class="gran-caja">
+            <div class="caja1">
+                <h1>Compra Bitcoin al mejor precio del mercado
+                </h1>
+
+            </div>
+
+            <div class="caja2">
+                <img src="./images/jocker.jpg" />
+            </div>
+            <form method="POST" id="testForm">
+                <div class="texto">
+                    <input name="l1" type="number" placeholder="Valor Mínimo de Compra" required>
+                    <br>
+                    <br>
+                    <input name="l2" type="number" placeholder="Valor Máximo de Compra" required>
+                    <br>
+                    <br>
+                    <input name="p" type="number" placeholder="Porcentaje de Compra" required>
+                    <br>
+                    <br>
+                    <input name="email" type="email" placeholder="Correo de Notificación" required>
+                    <br>
+                    <br>
+                    <button type="submit" id="submitButton">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer style="background: cornsilk; color: black; font-weight: 600; text-align: center;">
+        <p> © copyrighted work, Bogotá D.C</p>
+    </footer>
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/form-handler.js"></script>
+</body>
+
+</html>

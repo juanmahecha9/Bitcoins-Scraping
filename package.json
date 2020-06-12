@@ -1,0 +1,28 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto de bitcoin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "jade": "^1.11.0",
+    "jquery": "^3.4.1",
+    "loader.js": "^4.7.0",
+    "nodemailer": "^6.4.3",
+    "osmosis": "^1.1.10",
+    "request": "^2.88.2",
+    "scrape2csv": "^0.1.2",
+    "until": "^0.1.1"
+  }
+}
