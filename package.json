@@ -4,7 +4,9 @@
   "description": "Proyecto de bitcoin",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server"
   },
   "keywords": [],
   "author": "",
@@ -24,5 +26,8 @@
     "request": "^2.88.2",
     "scrape2csv": "^0.1.2",
     "until": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

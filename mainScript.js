@@ -49,13 +49,7 @@ const getResults = request(URL, function (err, res, body) {
 		});
 
 	}
-
-
-
-
-
-
-	//Read the value of Dollar in COP
+		//Read the value of Dollar in COP
 	const URL1 = "https://dolar.wilkinsonpc.com.co/divisas/dolar.html/";
 	var obj1 = {};
 
@@ -236,3 +230,4 @@ const getResults3 = request(URL3, function (err, res, body) {
 	});
 });
 
+module.exports =getResults;

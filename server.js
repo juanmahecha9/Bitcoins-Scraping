@@ -14,6 +14,8 @@ var express = require('express'),
   //require the path nodejs module
   path = require("path");
 
+
+  let co;
 //support parsing of application/json type post data
 app.use(bodyParser.json());
 
@@ -34,7 +36,7 @@ app.post('/form', function (req, res) {
     service: 'gmail',
     auth: {
       user: 'BTC.vigila@gmail.com',
-      pass: 'Q1W2E3R4T5z'
+      pass: 'btc-123look'
     }
   });
 
@@ -45,6 +47,7 @@ app.post('/form', function (req, res) {
     email: req.body.email || null
   }));
 
+  co = req.body.email;
   sleep.then((d) => {
     p = d.cx;
     l1 = d.ax;
@@ -142,7 +145,22 @@ app.post('/form', function (req, res) {
         }
       }
       else{
-        console.log("en este momento no hay valores en ese rango")
+        console.log("en este momento no hay valores en ese rango");
+console.log(co)
+var mailOptions = {
+  from: 'BTC.vigila@gmail.com',
+  to: co,
+  subject: 'Sending Email using Node.js',
+  text: 'En este momento no hay ningun vendror de BITCOINS que se ajuste a tus requerimeintos: '+ "Porcentaje: " + req.body.p +'%' +  '   POR FAVOR INTENTA MAS TARDE.'
+};
+transporter.sendMail(mailOptions, function (error, info) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+        
       }
     }
 
@@ -159,3 +177,7 @@ app.post('/form', function (req, res) {
 app.listen(port, function () {
   console.log('Server is running. Point your browser to: http://localhost:3000');
 });
+
+function x(q1){
+ 
+}
